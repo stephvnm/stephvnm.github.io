@@ -100,16 +100,6 @@ section{
   color: var(--accent);
 }
 
-#resume-link{
-  color: var(--accent);
-  margin-left: 10px;
-  padding: 7px;
-}
-
-#resume-link:hover{
-  color: var(--light);
-}
-
 .link:hover{
   background-color: var(--accent);
   color: var(--light);
@@ -187,15 +177,6 @@ section{
 #about-me p{
   max-width: 700px;
   font-size: 18px;
-}
-
-#about-me #resume{
-  text-transform: capitalize;
-  font-weight: bold;
-}
-
-#about-me #resume a{
-  color: var(--accent);  
 }
 
 .hl{
@@ -452,11 +433,6 @@ footer a{
   .nav-link a{
     text-transform: uppercase;
     color: var(--dark);
-  }
-
-  #resume-link{
-    color: var(--light);
-    background-color: var(--accent);
   }
 
   .open .fa-window-close{
