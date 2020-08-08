@@ -20,29 +20,30 @@ window.sr = ScrollReveal();
 sr.reveal('.wrap', {
   origin: 'top',
   duration: 500,
-  distance: '1rem',
   delay: 500
 });
 
 sr.reveal('#about-me', {
   origin: 'left',
   duration: 1000,
-  distance: '25rem',
+  distance: '50%',
   delay: 300
 });
 
 sr.reveal('#skills', {
   origin: 'right',
   duration: 1000,
-  distance: '25rem',
+  distance: '50%',
   delay: 300
 });
+
+
 
 sr.reveal('.project', {
   origin: 'top',
   duration: 1000,
-  distance: '10rem',
-  delay: 500
+  distance: '50%',
+  delay: 300
 });
 
 
