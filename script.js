@@ -20,7 +20,7 @@ window.sr = ScrollReveal();
 sr.reveal('.wrap', {
   origin: 'top',
   duration: 500,
-  delay: 500
+  delay: 1000
 });
 
 sr.reveal('#about-me', {
