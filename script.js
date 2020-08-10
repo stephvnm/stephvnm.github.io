@@ -20,7 +20,7 @@ window.sr = ScrollReveal();
 sr.reveal('.wrap', {
   origin: 'top',
   duration: 500,
-  distance: 100%,
+  distance: '100%',
   delay: 1000
 });
 
