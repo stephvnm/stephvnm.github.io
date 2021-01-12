@@ -338,7 +338,7 @@ footer a{
 
 @media (max-width: 780px) {
   #hero{
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
   #hero h4{
     font-size: 16px;
@@ -426,6 +426,11 @@ footer a{
 }
 
 @media (max-width: 650px) {
+  #about-me, #skills {
+    padding: 75px 15px;
+    margin: 0;
+  }
+
   #hero h1, #hero h2{
     font-size: 60px;
   }
@@ -461,7 +466,7 @@ footer a{
   }
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   #nav-links{
     width: 60%;
   }
@@ -511,6 +516,6 @@ footer a{
 
 @media (max-width: 420px){
   section{
-    padding-top: 80px;
+    /* padding-top: 80px; */
   }
 }
