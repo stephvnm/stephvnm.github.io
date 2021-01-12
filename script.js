@@ -17,7 +17,7 @@ navLinks.forEach(navLink => {
 // Scroll Reveal
 window.sr = ScrollReveal();
 
-sr.reveal('.wrap', {
+sr.reveal('#hero', {
   origin: 'top',
   duration: 500,
   distance: '100%',
