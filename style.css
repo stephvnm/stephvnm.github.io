@@ -35,13 +35,27 @@ section{
   overflow: hidden;
 }
 
+.link{
+  border: 2px solid var(--accent); 
+  border-radius: 3px; 
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.link:hover{
+  background-color: var(--accent);
+  color: var(--light);
+}
+
 /* Navbar */
 #navbar{
   position: fixed;
   top:0;
   left:0;
   right: 0;
-  background-color: var(--dark);  
+  background-color: var(--dark); 
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.9);    
   z-index: 5;
 }
 
@@ -79,7 +93,6 @@ section{
 
 .nav-link {
   list-style: none;
-  color: var(--gray);
   padding: 0 15px;
 }
 
@@ -92,19 +105,6 @@ section{
   color: var(--light);
 }
 
-.link{
-  border: 2px solid var(--accent); 
-  border-radius: 3px; 
-  background-color: transparent;
-  text-decoration: none;
-  color: var(--accent);
-}
-
-.link:hover{
-  background-color: var(--accent);
-  color: var(--light);
-}
-
 /* Main */
 /* Hero section */
 #hero{
@@ -112,27 +112,18 @@ section{
   height: 100vh;  
 }
 
-.wrap{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 #hero h4{
   font-size: 18px;
-  font-family: var(--secondaryFont);
   color: var(--accent);
 }
 
 #hero h1{
   font-size: 80px;
-  font-family: var(--primaryFont);
   color: var(--light);
 }
 
 #hero h2{
-  font-size: 80px;
-  font-family: var(--primaryFont);
+  font-size: 70px;
   color: var(--gray);
   margin-bottom: 30px;
 }
@@ -140,7 +131,6 @@ section{
 #hero p{
   max-width: 500px;
   font-size: 18px;
-  font-family: var(--secondaryFont);
 }
 
 .mail-link{
@@ -155,18 +145,16 @@ section{
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
-  padding-right: 60px;
-  padding-left: 60px;
+  margin: 0 60px;
 }
 
 .section-heading{
   font-size: 48px;
   color: var(--accent);
-  display: block;
 } 
 
 .hr {
-  display: block;    
+  /* display: block;     */
   width: 100px;
   background-color: var(--gray);
   height: 1px;
@@ -187,28 +175,21 @@ section{
 #skills{
   display: flex;
   flex-direction: column;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin: 0 60px;
 }
-
-/* #skills-content{
-  display: flex;
-  justify-content: space-between;
-} */
 
 .info{
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  /* flex: 0.4; */
 }
 
 .info p{
-  flex: 0.4;
+  flex: .4;
 }
 
 #tech{
-  flex: 0.5;
+  flex: .5;
   transform: translateY(-30px);
 }
 
@@ -221,7 +202,7 @@ section{
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
   list-style: none;
-  background-color: rgba(0, 0, 0, 0.3);  
+  background-color: rgba(0, 0, 0, .3);  
 }
 
 #tech-list li{
@@ -279,7 +260,7 @@ section{
 }
 
 .project-descr{
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .3);
   max-width: 550px;
   padding: 20px 10px;
 }
@@ -302,9 +283,7 @@ section{
 
 .project-link {
   border: 1px solid var(--accent);
-  border-radius: 3px;
   padding: 5px 10px;
-  text-decoration: none;
   color: var(--accent);
   margin: 20px 10px;
 }
@@ -339,11 +318,8 @@ section{
 
 #contact .mail-link{
   border: 1px solid var(--accent);
-  border-radius: 4px;
-  color: var(--accent);
   padding: 15px 30px;
   font-size: 20px;
-  text-decoration: none;
   text-transform: uppercase;  
 }
 
@@ -351,8 +327,7 @@ section{
   color: var(--light);
 }
 
-footer{  
-  display: block;
+footer{
   padding: 40px 0 20px 0;
   text-align: center;
 }
@@ -384,8 +359,6 @@ footer a{
   .tags, .project-reverse .tags{
     justify-content: center;
   }
-
-
 }
 
 @media (max-width: 715px) {
